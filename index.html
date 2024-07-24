@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bungee+Spice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+    /> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Lilita+One&family=Lobster&family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+    rel="stylesheet"
+    /> -->
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+    rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css" />
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/087f3f1be9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>LukerDev Portfolio</title>
+  </head>
+  <body>
+    <div class="elemento__3">
+      <div class="container">
+        <div id="marquee-container">
+          <h2 id="titulo">Titulo de la cancion</h2>
+        </div>
+        <div class="img-container">
+          <img src="./img/1699940330729.jpg" alt="" />
+        </div>
+
+        <div class="datos-cancion">
+          <!-- <h2 id="titulo">Titulo de la cancion</h2> -->
+          <h3 id="artista">Artista</h3>
+          <audio src="./songs/Hero of the 80s.mp3"></audio>
+          <div class="progressBar" id="progressBar">
+            <div class="progress" id="progress"></div>
+            <div class="duracion">
+              <span id="tiempoActual">0:00</span>
+              <span id="tiempoDuracion">2:00</span>
+            </div>
+          </div>
+          <div class="controles">
+            <i class="fa-solid fa-backward" id="prev"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+          </div>
+        </div>
+        <div class="volume-control">
+          <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+          <input
+            type="range"
+            id="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.05"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ESPACIO ENTRE ELEMENTO 2 Y 3 -->
+    <!-- ESPACIO ENTRE ELEMENTO 2 Y 3 -->
+    <!-- ESPACIO ENTRE ELEMENTO 2 Y 3 -->
+    <!-- ESPACIO ENTRE ELEMENTO 2 Y 3 -->
+
+    <div class="grid">
+      <div class="elemento__1">
+        <div class="front1">
+          <div class="image-title">
+            <div class="nombre__container">
+              <h1 class="card__1__title__1">¡Bienvenido!</h1>
+              <div class="bienvenido__soy">
+                <h1 class="card__1__title__1b">Soy</h1>
+                <h1 class="card__1__title__1a">Lucas Caruso.</h1>
+              </div>
+            </div>
+            <div class="desarrollador__container">
+              <h3 class="card__1__title__2">Desarrollador Web</h3>
+              <h3 class="card__1__title__2a">Full-Stack</h3>
+            </div>
+            <div class="diseñador__container">
+              <h3 class="card__1__title__3">Diseñador</h3>
+              <h3 class="card__1__title__3a">UX/UI</h3>
+            </div>
+          </div>
+          <div class="link__sobremi">
+            <p>Sobre mi</p>
+          </div>
+        </div>
+        <div class="animated-image__container">
+          <img
+            class="animated-image"
+            src="./img/e10c1bd220366bb545ff99ea0a404fb0.jpg"
+          />
+        </div>
+      </div>
+      <div
+        class="popup__sobremi__container"
+        id="popup__sobremi__container"
+        style="display: none"
+      >
+        <!-- agregar arriba al lado de id, style="display: none" -->
+        <div class="popup__sobremi">
+          <span id="close__sobremi" class="close">&times;</span>
+          <div class="primer__parrafo__sobremi">
+            <div class="gif__mario">
+              <!-- <img src="./img/mario.gif" /> -->
+            </div>
+            <h2>Sobre mi</h2>
+            <p></p>
+          </div>
+          <div class="lista__stack">
+            <div class="figma__container --container">
+              <img src="./img/icons8-figura-48.png" alt="" />
+              <h3>FIGMA</h3>
+              <span>UI design</span>
+            </div>
+            <!-- <div class="html__container">
+              <img src="./img/icons8-html-5-48.png" alt="" />
+              <h3>HTML</h3>
+              <span>Website structure</span>
+            </div>
+            <div class="css__container">
+              <img src="./img/icons8-css-48.png" alt="" />
+              <span>Css</span>
+            </div> -->
+            <div class="javascript__container --container">
+              <img src="./img/icons8-javascript-48.png" alt="" />
+              <h3>JAVASCRIPT</h3>
+              <span>Programming language</span>
+            </div>
+            <div class="react__container --container">
+              <img src="./img/icons8-reaccionar-nativo-48.png" alt="" />
+              <h3>REACT.JS</h3>
+              <span>Web interface</span>
+            </div>
+            <div class="node__container --container">
+              <img src="./img/icons8-nodo-js-48.png" alt="" />
+              <h3>NODE.JS</h3>
+              <span>Package manager</span>
+            </div>
+            <!-- <i class="fa-brands fa-figma"></i> -->
+            <!-- <p class="p__1">Figma</p> -->
+            <!-- <i class="fa-brands fa-html5"></i> -->
+            <!-- <p class="p__2">Html</p> -->
+            <!-- <p class="p__3">Css</p> -->
+            <!-- <p class="p__4">Javascript</p> -->
+          </div>
+          <div class="link__sobremi__links">
+            <div class="certificados__izq">
+              <h3>Certificados</h3>
+              <div class="certificados__1">
+                <a
+                  href="https://certificates.soyhenry.com/new-cert?id=89b2076026fedf4b5e7d8b922c335d0e07610198ccdf1fe8f2cdce8b3b2c120c"
+                  target="_blank"
+                  ><img
+                    src="./img/Henry.png"
+                    class="imagen__certificados"
+                    alt="Henry Certificate"
+                /></a>
+                <a href="https://cert.efset.org/zNdxfc" target="_blank"
+                  ><img src="./img/EnglishC2.png" class="imagen__certificados"
+                /></a>
+              </div>
+            </div>
+            <a
+              href="./CV/Lucas Caruso Español C.V.pdf"
+              download="Lucas Caruso"
+              target="_blank"
+            >
+              <div class="certificados__der">
+                <h3>Descargar C.V</h3>
+                <div class="certificados__1">
+                  <img src="./img/captura C.V.png" class="imagen__capturacv" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gif__mario__ok">
+            <!-- <img src="./img/marioOK.png" /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ESPACIO ENTRE ELEMENTO 1 Y 2 -->
+      <!-- ESPACIO ENTRE ELEMENTO 1 Y 2 -->
+      <!-- ESPACIO ENTRE ELEMENTO 1 Y 2 -->
+      <!-- ESPACIO ENTRE ELEMENTO 1 Y 2 -->
+      <div class="elemento__2">
+        <div class="front2__container">
+          <div class="img__container__proyectos">
+            <img class="imagen__proyectos" src="./img/proyectos4.gif" alt="" />
+            <!-- <div class="overlay">
+              <h3>Estos son algunos de mis proyectos</h3>
+            </div> -->
+          </div>
+          <div class="link__proyectos">
+            <p>Proyectos</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="elemento__2">
+        <div class="front2__container">
+          <div class="img__container__proyectos">
+            <div class="image-title-2">
+              <h3>Estos son algunos de mis proyectos</h3>
+            </div>
+            <img
+              class="imagen__proyectos"
+              src="./img/d0de6c09a5315d5794bea4702be13361.jpg"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="link__proyectos">
+        <p>Proyectos</p>
+      </div> -->
+      <!-- <div class="overlay">
+        <div class="text-container">
+          <h3>Estos son algunos de mis proyectos</h3>
+        </div>
+      </div> -->
+      <!-- hasta aca es elemento 2 -->
+      <div
+        class="popup__proyectos__container"
+        id="popup__proyectos__container"
+        style="display: none"
+      >
+        <!-- agregar arriba al lado de id, style="display: none" -->
+        <div class="popup__proyectos">
+          <span id="close__proyectos" class="close__proyectos">&times;</span>
+          <div id="content__items__carrousel">
+            <section class="splide" aria-label="Basic Structure Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="item__carrousel" id="item__carrousel__1">
+                      <div
+                        class="tarjeta__carrousel"
+                        id="tarjeta__carrousel__1"
+                      >
+                        <h2>John Lemon</h2>
+                        <p class="descripcion__proyectos">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ad nam minus deleniti dolore expedita laborum
+                          nesciunt perspiciatis quis! Dolor, eum! Enim soluta
+                          autem quidem ut iste porro ipsa numquam laboriosam.
+                        </p>
+                        <div class="lista__stack__proyecto1">
+                          <!-- <p class="p__1__proyecto1">Figma</p> -->
+                          <p class="p__2__proyecto1">Html</p>
+                          <p class="p__3__proyecto1">Css</p>
+                          <p class="p__4__proyecto1">Javascript</p>
+                        </div>
+                        <div class="imagenes__proyecto1">
+                          <img src="./img/fondomario.jpg" alt="" />
+                          <img
+                            src="./img/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="./img/chuck-fortner-LFVBohYmtgc-unsplash.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="item__carrousel" id="item__carrousel__2">
+                      <div
+                        class="tarjeta__carrousel"
+                        id="tarjeta__carrousel__2"
+                      >
+                        <h2>Proyecto 2</h2>
+                        <p class="descripcion__proyectos">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ad nam minus deleniti dolore expedita laborum
+                          nesciunt perspiciatis quis!.
+                        </p>
+                        <div class="lista__stack__proyecto1">
+                          <p class="p__1__proyecto1">Figma</p>
+                          <p class="p__2__proyecto1">Html</p>
+                          <p class="p__3__proyecto1">Css</p>
+                          <p class="p__4__proyecto1">Javascript</p>
+                        </div>
+                        <div class="imagenes__proyecto1">
+                          <img src="./img/1699940330729.jpg" alt="" />
+                          <img
+                            src="./img/cafer-mert-ceyhan-LAY19dUD_ro-unsplash.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="./img/ernest-karchmit-UAbg0py6GYQ-unsplash.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="item__carrousel" id="item__carrousel__3">
+                      <div
+                        class="tarjeta__carrousel"
+                        id="tarjeta__carrousel__3"
+                      >
+                        <h2>Raices</h2>
+                        <p class="descripcion__proyectos">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ad nam minus deleniti dolore expedita laborum
+                          nesciunt perspiciatis quis! Dolor, eum! Enim.
+                        </p>
+                        <div class="lista__stack__proyecto1">
+                          <p class="p__1__proyecto1">Figma</p>
+                          <!-- <p class="p__2__proyecto1">Html</p>
+                          <p class="p__3__proyecto1">Css</p>
+                          <p class="p__4__proyecto1">Javascript</p> -->
+                        </div>
+                        <div class="imagenes__proyecto1">
+                          <img src="./img/8395.jpg" alt="" />
+                          <img
+                            src="./img/bcf286e6061813167fa80db6e81f0753.gif"
+                            alt=""
+                          />
+                          <img
+                            src="./img/joystick-gaming-controller-isolated-on-blue-background-video-game-console-developed-interactive-entertainment-free-photo.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="link__proyectos__links"></div>
+        </div>
+      </div>
+
+      <!-- ESPACIO ENTRE ELEMENTO 3 Y 4 -->
+      <!-- ESPACIO ENTRE ELEMENTO 3 Y 4 -->
+      <!-- ESPACIO ENTRE ELEMENTO 3 Y 4 -->
+      <!-- ESPACIO ENTRE ELEMENTO 3 Y 4 -->
+      <!-- <video
+        autoplay
+        muted
+        loop
+        src="./img/fd495f89500a98cbf67240be5865bc33.mp4"
+      ></video> -->
+      <div class="elemento__4">
+        <div class="card__4">
+          <div class="front-4">
+            <img src="./img/contact2.gif" class="img_pc" />
+            <div class="image-title-4">
+              <div class="link__contacto" id="contacto-link">
+                <p>Contacto</p>
+              </div>
+              <h3 class="card__4__title__2">¿Te gustaría contactarme?</h3>
+            </div>
+          </div>
+          <div class="back__4">
+            <form
+              id="contact-form"
+              class="form"
+              action="https://formspree.io/f/mkgwnrrp"
+              method="POST"
+            >
+              <div id="confirmation-message" class="confirmation-message">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>¡Gracias por contactarte!</h2>
+                <p>
+                  Tu mensaje ha sido enviado y te responderé lo antes posible.
+                </p>
+              </div>
+              <div
+                id="confirmation-message"
+                class="confirmation-message error"
+                display:block
+              >
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>Error al ingresar tus datos.</h2>
+                <p>
+                  Por favor verifica que el correo electrónico ingresado sea
+                  correcto.
+                </p>
+              </div>
+              <div>
+                <span id="close__contacto-4" class="close-4">&times;</span>
+              </div>
+              <h2 class="form__title">¡Envíame un mensaje!</h2>
+              <div class="form__container">
+                <!-- <h3 class="form__subtitle">¡Envíame un mensaje!</h3> -->
+                <div class="nombre__correo__container">
+                  <input
+                    type="text"
+                    class="form__input form--nombre"
+                    placeholder="Nombre"
+                    name="name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    class="form__input form--correo"
+                    placeholder="Correo electrónico"
+                    name="email"
+                    required
+                  />
+                </div>
+                <textarea
+                  class="form__input form__input--message"
+                  placeholder="Escribe aquí tu mensaje"
+                  name="message"
+                  required
+                ></textarea>
+                <input type="submit" value="Enviar" class="form__cta" />
+              </div>
+            </form>
+            <!-- <h1>Desarrollador y Diseñador</h1>
+            <p>Texto describiendo parte de atras de la card</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- ESPACIO ENTRE ELEMENTO 4 Y 5 -->
+      <!-- ESPACIO ENTRE ELEMENTO 4 Y 5 -->
+      <!-- ESPACIO ENTRE ELEMENTO 4 Y 5 -->
+      <!-- ESPACIO ENTRE ELEMENTO 4 Y 5 -->
+      <div class="elemento__5">
+        <div class="grilla__container">
+          <div class="grilla">
+            <div class="elem__izq">
+              <div class="info__container">
+                <h2>Información</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="contacto__container">
+                <h2>Contacto</h2>
+                <div class="contacto__container__numero">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <p>+549 261 2448680</p>
+                </div>
+                <div class="contacto__container__mail">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>caruso.developer@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="redes__sociales">
+              <p>¡Suscribete a mis últimos proyectos!</p>
+              <input
+                type="email"
+                class="form__input__mailing form--correo--mailing"
+                placeholder="Correo electrónico"
+                name="email"
+                required
+              />
+              <input
+                type="submit"
+                value="Suscribirme"
+                class="form__cta__mailing"
+              />
+            </div>
+          </div>
+          <div class="derechos">
+            <div class="elem__der">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ESPACIO ENTRE ELEMENTO 5 Y LOS SCRIPTS -->
+      <!-- ESPACIO ENTRE ELEMENTO 5 Y LOS SCRIPTS -->
+      <!-- ESPACIO ENTRE ELEMENTO 5 Y LOS SCRIPTS -->
+      <!-- ESPACIO ENTRE ELEMENTO 5 Y LOS SCRIPTS -->
+    </div>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+      });
+      splide.mount();
+    </script>
+    <script src="./scripts/popup_sobremi.js"></script>
+    <script src="./scripts/popup_proyectos.js"></script>
+    <script src="./scripts/typing.js"></script>
+    <script src="./scripts/sound.js"></script>
+    <script src="./scripts/reproductor.js"></script>
+    <script src="./scripts/flip4.js"></script>
+    <script src="./scripts/form.js"></script>
+    <!-- <script src="./scripts/fondos.js"></script> -->
+    <!-- <script src="./scripts/activecards.js"></script> -->
+    <!-- <script src="./scripts/carrousel.js"></script> -->
+  </body>
+</html>
+
+<!-- Dedicado y detallista desarrollador web, con una solida
+              comprension tanto del Front End como del Back End. Diseñador UX/UI
+              enfocado en crear aplicaciones web funcionales y atractivas. -->
+<!-- Utilizo tecnologias como Figma, HTML, CSS, JavaScript, Node.js,
+              React, PostgreSQL, Express, FireBase, Cloudinary, entre otras. -->
